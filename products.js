@@ -30,5 +30,20 @@ function listar() {
     })
 }
 
+function prodEscolar (value){
+    if (value.categoria == "Escolar")
+    return value;
+}
+var produtosEscolar = produtos.filter(prodEscolar);
+produtosEscolar.forEach(produtoEscolar => { 
+    console.log(produtoEscolar);
+})
 
-
+function prodEletronico (value){
+    if (value.categoria == "Eletrônico")
+    return value;
+}
+var produtosEletronico = produtos.filter(prodEletronico);
+produtosEletronico.forEach(produtoEletro => { 
+    console.log(produtoEletro);
+})
